@@ -1,0 +1,84 @@
+version: "2.0"
+
+
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_ability
+  - writing_genres
+  - narrative_writing_prompts
+  - descriptive_writing_prompts
+  - persuasive_writing_prompts
+  - expository_writing_prompts
+  - creative_writing_prompts
+  - out_of_scope
+  - write
+  - save_writing
+
+
+
+responses:
+  utter_greet:
+  - text: "Hi! Nice to see you ^^"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_unhappy:
+  - text: "That's so sad :<"  
+
+  utter_goodbye:
+  - text: "I hope you have a good time here with me! Were you to have any feedback, please provide at #. It would be my pleasure to receive a supportive feedback so as to improve myself. Thank you very much and good bye! ^^"
+
+  utter_iamabot:
+  - text: "I am a bot programmed by Chanity!"
+
+  utter_ask_ability:
+  - text: "I am Cactus - your writing pal with a mission to help you relieve stress by writing. You can choose among the 5 genres of writing, and I will then provide you with a prompt to write down your stories. Finally, your prompt and stories will be saved locally as an image (png file) so you can easily keep it as a journaling book and re-read it anytime. If you want to get start now, please reply with 'Get Started'. Have fun writing! ^^"
+
+  utter_writing_genres:
+  - text: "Cactus can provide you with prompts on 5 writing genres. Please choose one to receive a prompt for your selected genre! ^^\n 1. Narrative Writing: sharing something that happens to you or a character of your preference.\n 2. Descriptive Writing: write descriptively so as to immerse the reader in the experience.\n 3. Persuasive Writing: share your opinion in a thoughtful way and/or convince the reader of a viewpoint.\n 4. Expository Writing: explain a subject or inform about a particular topic area.\n 5. Creative Writing: find new ways to tell stories aside those above that can surprise and delight readers.\n"
+
+  utter_narrative_writing_prompts:
+  - text: "This is your prompt. You can start writing now! ^^\n 'Write about a time when you worked hard toward accomplishing a goal. Tell the story about the goal, why you set the goal, the steps you took to accomplish the goal, and how you felt once it was accomplished.'"
+
+  utter_descriptive_writing_prompts:
+  - text: "This is your prompt. You can start writing now! ^^\n 'Describe an inspiring friend or family member.'"
+
+  utter_persuasive_writing_prompts:
+  - text: "This is your prompt. You can start writing now! ^^\n Please state your opinion and discuss on the topic: 'Mathematics class is more important than music class.'"
+
+  utter_expository_writing_prompts:
+  - text: "This is your prompt. You can start writing now! ^^\n Explain why someone you know should be regarded as a leader."
+
+  utter_creative_writing_prompts:
+  - text: "This is your prompt. You can start writing now! ^^\n Outside the Window: What's the weather outside your window doing right now? If that's not inspiring, what's the weather like somewhere you wish you could be?"
+
+  utter_continue_writing:
+  - text: "You are doing a brilliant job! Do you want to extent your writing? Your future-self would be very thankful to read more! ^^"
+
+  utter_out_of_scope:
+  - text: "Sorry. I am unable to answer your question. If you have any feedback, please provide at #. It would be my pleasure to receive a supportive feedback so as to improve myself. Thank you very much! ^^"
+
+  utter_save_writing:
+  - text: "Today you have done an amazing job. Your future-self will definitely be proud of this! The last step would be to save your writing as a picture file so that you can keep it as a journal book and re-read it anytime. Do you want to proceed with this activity?"
+
+  utter_finish_all:
+  - text: "Thank you! You have now finished your writing for today and successfully saved it. Come back for more fascinating writing prompts to help you relieve for the day ^^"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

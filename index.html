@@ -1,0 +1,60 @@
+<html>
+    <body>
+      <style>
+        .rw-conversation-container .rw-header {
+          background-color: #fdabaa;
+        }
+        .rw-conversation-container .rw-messages-container .rw-message .rw-client {
+          background-color: #fdabaa;
+        }
+        .rw-launcher {
+          background-color: #fdabaa;
+        } 
+        .rw-conversation-container .rw-reply {
+          background-color: #fdabaa;
+          border: 1px solid #fdabaa;
+        }
+      </style>
+        <script>!(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+              "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+              (e.async = !0),
+              (e.onload = () => {
+                window.WebChat.default(
+                  {
+                    initPayload: "/greet",
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005",
+                    title: "Cactus The Writing Pal",
+                    subtitle: "Write and relieve all your stresses ~",
+                    profileAvatar: "assets/robot.svg",
+                    openLauncherImage: "assets/comment-heart.svg",
+                    //showFullScreenButton: true,
+                    fullScreenMode: true,
+                    //embedded: true,
+                    showMessageDate: true,
+                    inputTextFieldHint: "Type here to start writing! ^^",
+                    customMessageDelay: (message) => {
+                      let delay = message.length * 10;
+                      if (delay > 3 * 1000) delay = 3 * 1000;
+                      if (delay < 800) delay = 800;
+                      return delay;
+                    },
+                  },
+                  null
+                );
+              }),
+              t.insertBefore(e, t.firstChild);
+
+              function deleteItems() {
+                localstorage.clear();
+              }
+
+              window.onload = deleteItems()   
+              
+          })();
+          </script>
+    </body>
+</html>

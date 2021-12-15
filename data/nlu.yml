@@ -1,0 +1,141 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yas
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nah
+    - nu
+    - definitely not
+    - nauuu
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_ability
+  examples: |
+    - what can you do?
+    - what can you help me with?
+    - why you are here?
+    - who are you?
+
+- intent: writing_genres
+  examples: |
+    - what are the genres of writing that you can provide me with?
+    - what genres can I get start with?
+    - what can I do first?
+    - Get Started
+
+- intent: narrative_writing_prompts
+  examples: |
+    - Narrative Writing, please
+    - number one, please
+    - 1
+    - Narrative Writing: sharing something that happens to you or a character of your preference.
+    - i want to write narratively
+
+- intent: descriptive_writing_prompts
+  examples: |
+    - Descriptive Writing, please
+    - number two, please
+    - 2
+    - Descriptive Writing: write descriptively so as to immerse the reader in the experience.
+    - i want to write descriptively
+
+- intent: persuasive_writing_prompts
+  examples: |
+    - Persuasive Writing, please
+    - number three, please
+    - 3
+    - Persuasive Writing: share your opinion in a thoughtful way and/or convince the reader of a viewpoint.
+    - i want to write persuasively
+
+- intent: expository_writing_prompts
+  examples: |
+    - Expository Writing, please
+    - number four, please
+    - 4
+    - Expository Writing: explain a subject or inform about a particular topic area.
+    - i want to write expositorily
+
+- intent: creative_writing_prompts
+  examples: |
+    - Creative Writing, please
+    - number five, please
+    - 5
+    - Creative Writing: find new ways to tell stories aside those above that can surprise and delight readers.
+    - i want to write creatively
+
+- intent: write
+  examples: |
+    - [today i am going to write about] (write)
+    - [i want to tell a story on] (write)
+    - [it was on a sunny day] (write)
+    - [once upon a time] (write)
+
+- intent: save_writing
+  examples: |
+    - yes, please save my writing as a picture
+    - sure, please
+    - go ahead
+    - of course
+    - please proceed
+    - yas
+    - absolutely
+    - that would be perfect, thanks
+    - i agree
+    - affirmative
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - c u
+
+- intent: out_of_scope
+  examples: |
+    - can you show me mount Everest?
+    - am i healthy?

@@ -1,0 +1,92 @@
+version: "2.0"
+
+
+
+stories:
+
+- story: happy writing path 1 - narrative writing
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - action: utter_ask_ability
+  - intent: writing_genres
+  - action: utter_writing_genres
+  - intent: narrative_writing_prompts
+  - action: utter_narrative_writing_prompts
+  - intent: write
+  - action: utter_save_writing
+  - intent: save_writing
+  - action: utter_finish_all
+  - action: utter_goodbye
+
+- story: happy writing path 2 - descriptive writing
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - action: utter_ask_ability
+  - intent: writing_genres
+  - action: utter_writing_genres
+  - intent: descriptive_writing_prompts
+  - action: utter_descriptive_writing_prompts
+  - intent: write
+  - action: utter_save_writing
+  - intent: save_writing
+  - action: utter_finish_all
+  - action: utter_goodbye
+
+- story: happy writing path 3 - persuasive writing
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - action: utter_ask_ability
+  - intent: writing_genres
+  - action: utter_writing_genres
+  - intent: persuasive_writing_prompts
+  - action: utter_persuasive_writing_prompts
+  - intent: write
+  - action: utter_save_writing
+  - intent: save_writing
+  - action: utter_finish_all
+  - action: utter_goodbye
+
+- story: happy writing path 4 - expository writing
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - action: utter_ask_ability
+  - intent: writing_genres
+  - action: utter_writing_genres
+  - intent: expository_writing_prompts
+  - action: utter_expository_writing_prompts
+  - intent: write
+  - action: utter_save_writing
+  - intent: save_writing
+  - action: utter_finish_all
+  - action: utter_goodbye
+
+- story: happy writing path 5 - creative writing
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - action: utter_ask_ability
+  - intent: writing_genres
+  - action: utter_writing_genres
+  - intent: creative_writing_prompts
+  - action: utter_creative_writing_prompts
+  - intent: write
+  - action: utter_save_writing
+  - intent: save_writing
+  - action: utter_finish_all
+  - action: utter_goodbye
+
+- story: unhappy writing path 1 - come not to write
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - action: utter_ask_ability
+  - intent: deny
+  - action: utter_unhappy
+  - action: utter_goodbye
+
+
+
